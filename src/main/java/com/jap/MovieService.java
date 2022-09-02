@@ -62,8 +62,11 @@ public class MovieService {
         //use entrySet to iterate through the Map object
         //get all the movies name and their released date for the movie of genre "comedy"
         //store movie name with release date in the above created Map object and return the Map object
-
-
+        for(Map.Entry<Movie,Integer> entry : map.entrySet()){
+            if(entry.getKey().getGenre().equalsIgnoreCase("comedy")){
+                map1.put(entry.getKey().getMovieName(),entry.getKey().getReleaseDate());
+            }
+        }
         return map1;
 
     }

@@ -36,7 +36,6 @@ public class MovieServiceTest {
         movieIntegerMap.put(movie5,3);
 
     }
-
     @After
     public void tearDown(){
         movieIntegerMap = null;
